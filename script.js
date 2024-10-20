@@ -1,18 +1,31 @@
-// Function to open the popup
-function openPopup(popupId) {
-    document.getElementById(popupId).style.display = 'block';
+function checkFunFactPrompt() {
+    // Check if the fun fact has already been shown
+    if (!localStorage.getItem('funFactPromptShown')) {
+        // Show the prompt to the user
+        document.getElementById('fun-prompt').classList.remove('transparent');
+        // Set localStorage to indicate that the prompt has been shown
+        localStorage.setItem('funFactPromptShown', 'true');
+    }
 }
 
-// Function to close the popup
+function showFunFact() {
+    // Show the fun fact popup
+    document.getElementById('fun-popup').classList.remove('transparent');
+    // Close the prompt
+    closePrompt();
+}
+
+function closePrompt() {
+    // Hide the prompt
+    document.getElementById('fun-prompt').classList.add('transparent');
+}
+
 function closePopup(popupId) {
-    document.getElementById(popupId).style.display = 'none';
+    document.getElementById(popupId).classList.add('transparent'); // Hide the popup
 }
 
-// Example: Open the popup when the page loads
-window.onload = function() {
-    openPopup('fun-popup');
-};
-
+// Call the prompt function on page load
+window.onload = checkFunFactPrompt;
 const WORD_OF_THE_DAY = 'paper'; // Change this daily
 const MAX_GUESSES = 6;
 let currentGuess = '';

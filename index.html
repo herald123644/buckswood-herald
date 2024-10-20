@@ -7,7 +7,7 @@
     <title>Buckswood Herald</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="fun-prompt()">
 
 <header>
     <h1>Buckswood Herald</h1>
@@ -32,7 +32,7 @@
                 <a href="all-stories.html">ყველა მოსწავლეთა ნამუშევარი</a>
             </div>
         </li>
-        <li><a href="about.html">ჩვენს შესახებ</a></li> <!-- About Us Link with Popup -->
+        <li><a href="about.html">ჩვენს შესახებ</a></li> <!-- About Us -->
     </ul>
 </nav>
 
@@ -143,13 +143,15 @@
 </section>
 
 <!-- Fun Fact Popup -->
-<div id="fun-popup" class="popup transparent">
+<div id="fun-prompt" class="popup transparent">
     <div class="popup-content">
-        <span class="popup-close" onclick="closePopup('fun-popup')">&times;</span>
-        <h3>დღის სახალისო ფაქტი</h3>
-        <p>იცოდით რომ.. ავსტრალიაში თუ 10 $-ს შუაზე გადახევ, სრულიად კანონიერად შეგიძლია გამოიყენო ორივე ნახევარი, როგორც 5-5$</p>
+        <h3>სხვადასხვა ფაქტები</h3>
+        <p>გსურთ რომ იხილოთ დღიური სახალისო ფაქტი?</p>
+        <button onclick="showFunFact()">დიახ</button>
+        <button onclick="closePrompt()">არა</button>
     </div>
 </div>
+
 
 
 <footer>
