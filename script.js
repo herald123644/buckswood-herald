@@ -13,7 +13,7 @@ window.onload = function() {
     openPopup('fun-popup');
 };
 
-const WORD_OF_THE_DAY = 'apple'; // Change this daily
+const WORD_OF_THE_DAY = 'paper'; // Change this daily
 const MAX_GUESSES = 6;
 let currentGuess = '';
 let guessCount = 0;
