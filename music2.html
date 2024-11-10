@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ახალი მუსიკალური ტალღა</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Add some styles for the images and layout */
+        .music-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #e6e9f0; /* Soft light-blue background */
+            font-family: Arial, sans-serif;
+        }
+
+        .album-image {
+            width: 90%; /* Scale image width to 90% of the container */
+            height: auto;
+            max-width: 600px; /* Limit max width to 600px */
+            max-height: 400px; /* Limit max height */
+            margin-bottom: 20px;
+            border-radius: 10px; /* Add some rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slightly stronger shadow */
+        }
+
+        .album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff; /* White background for album blocks */
+            border-radius: 10px; /* Rounded corners for the album block */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow for album block */
+            max-width: 700px; /* Limit max width of the album block */
+            width: 100%; /* Make album blocks responsive */
+        }
+
+        .album-title {
+            font-size: 22px;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .album-description {
+            font-size: 16px;
+            color: #555;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">მთავარი გვერდი</a></li>
+                <li class="dropdown">
+                    <a href="#">ყველა არტიკლი</a>
+                    <div class="dropdown-content">
+                        <a href="all-news.html">ყველა სკოლის სიახლე</a>
+                        <a href="all-global.html">ყველა საერთაშორისო სიახლე</a>
+                        <a href="all-stories.html">ყველა მოსწავლეთა ნამუშევარი</a>
+                    </div>
+                </li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li> <!-- About Us Link with Popup -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="music-section">
+            
+            
+            <div class="album">
+                <h1><strong>ახალი მუსიკალური ტალღა - ახალი ალბომები და სიმღერები რომლებიც არ უნდა გამოტოვოთ!</strong></h1>
+            </div>
+
+
+            <div class="album">
+                <h2>Chromakopia – Tyler, the Creator
+                </h2>
+                <img src="imagess/chromakopia.jpeg" alt="Vultures 2 Album Cover">
+                <p>ეს საოცარი რეპ-ალბუმი ძალიან ცოტა ხნის წინ, 28 ოქტომბერს გამოიშვა და უკვე პოპულარული გახდა. 14 ახალი სიმღერა გამოუშვა ტაილერმა და აქედან ყველას Spotify-ზე 20 მილიონზე მეტი მოსმენა აქვს. მათ შორის ყველაზე მეტი მოსმენა აქვს Sticky, Rah Tah Tah, Darling I, Noid და St. Chroma-ს. ამ სიმღერების მოსმენას აუცილებლად გირჩევთ.
+                </p>
+            </div>
+
+            <div class="album">
+                <h2>Delusional – Ken Carson</h2>
+                <img src="imagess/delulu.png" alt="Vultures 2 Album Cover">
+                <p>კენ კარსონი ჰელოუინისთვის გვპირდებოდა ახალ ალბუმს - More Chaos, თუმცა მხოლოდ 1 სიმღერა გამოუშვა, სახელად delusional, რომელსაც უკვე 2 მილიონი მოსმენა აქვს. ხოლო ალბუმი More Chaos დიდი ალბათობით 2025 წელს გამოვა.</p>
+            </div>
+
+            <div class="album">
+                <h2>Eternal Atake 2 – Lil Uzi Vert</h2>
+                <img src="imagess/etern.png" alt="Chromakopia Album Cover">
+                <p>ეს ალბუმიც ახლახანს, 1 ნოემბერს გამოვიდა. მოიცავს 16 სიმღერას, რომლებმაც უკვე მხოლოდ 2 დღეში 2 მილიონზე მეტი მოსმენა დააგროვეს. გირჩევთ ამ ახალ ალბუმსაც მოუსმინოთ და შეაფასოთ.</p>
+            </div>
+
+            <div class="album">
+                <h2>Brat – Charli XCX
+                </h2>
+                <img src="imagess/brat.png" alt="Chromakopia Album Cover">
+                <p>7 ივნისს გამოიშვა ეს ალბუმი, რომელმაც ასევე დიდი ყურადღება მოიპოვა ხალხისგან. სიმღერა 360 და Apple-ს 200 მილიონზე მეტი მოსმენა აქვს და დანარჩენ სიმღერებს დაახლოებით 50-100 მილიონი.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Buckswood Herald. All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+</html>

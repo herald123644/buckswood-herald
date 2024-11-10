@@ -696,3 +696,50 @@ blockquote {
     padding: 10px 20px; /* Padding around the quote */
     margin: 20px 0; /* Space above and below */
 }
+
+/* Article Section Styles */
+.article-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-section h2 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.article-date {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.article-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.article-divider {
+    margin: 40px 0;
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}
